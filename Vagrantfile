@@ -87,5 +87,6 @@ Vagrant.configure(2) do |config|
     # Set proxy
     # Add proxy config to /etc/defaults/docker
     git clone https://github.com/VundleVim/Vundle.vim.git /home/vagrant/.vim/bundle/Vundle.vim
+    # TODO vim-gtk + canberra
   SHELL
 end

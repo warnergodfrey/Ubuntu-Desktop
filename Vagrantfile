@@ -77,7 +77,7 @@ Vagrant.configure(2) do |config|
     /home/vagrant/fonts/install.sh
     git clone https://github.com/Anthony25/gnome-terminal-colors-solarized.git /home/vagrant/colors/gnome-terminal-colors-solarized
     chown -R vagrant:vagrant /home/vagrant/colors
-    /home/vagrant/colors/gnome-terminal-colors-solarized/install.sh
+    /home/vagrant/colors/gnome-terminal-colors-solarized/install.sh -profile DEFAULT -scheme dark
     git clone git://github.com/warnergodfrey/dotfiles /home/vagrant/.dotfiles
     chown -R vagrant:vagrant /home/vagrant/.dotfiles/
     gconftool --set --type=string /apps/gnome-terminal/profiles/Default/encoding en_US.UTF-8
@@ -86,5 +86,6 @@ Vagrant.configure(2) do |config|
     usermod -aG docker vagrant
     # Set proxy
     # Add proxy config to /etc/defaults/docker
+    git clone https://github.com/VundleVim/Vundle.vim.git /home/vagrant/.vim/bundle/Vundle.vim
   SHELL
 end

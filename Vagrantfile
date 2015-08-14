@@ -88,6 +88,6 @@ Vagrant.configure(2) do |config|
     # Add proxy config to /etc/defaults/docker
     git clone https://github.com/VundleVim/Vundle.vim.git /home/vagrant/.vim/bundle/Vundle.vim
     # TODO: vim-gtk + canberra
-    # TODO: Gnome terminal UTF-8 
+    # TODO: Gnome terminal UTF-8 + inconsolata 13pt
   SHELL
 end

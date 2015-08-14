@@ -81,5 +81,10 @@ Vagrant.configure(2) do |config|
     git clone git://github.com/warnergodfrey/dotfiles /home/vagrant/.dotfiles
     chown -R vagrant:vagrant /home/vagrant/.dotfiles/
     gconftool --set --type=string /apps/gnome-terminal/profiles/Default/encoding en_US.UTF-8
+    apt-get remove docker.io
+    wget -qO- https://get.docker.com/ | sh
+    usermod -aG docker vagrant
+    # Set proxy
+    # Add proxy config to /etc/defaults/docker
   SHELL
 end

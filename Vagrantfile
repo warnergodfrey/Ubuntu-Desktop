@@ -89,6 +89,6 @@ Vagrant.configure(2) do |config|
     git clone https://github.com/VundleVim/Vundle.vim.git /home/vagrant/.vim/bundle/Vundle.vim
     # TODO: vim-gtk + canberra
     # TODO: Gnome terminal UTF-8 + inconsolata 13pt
-    gconftool --set --type=string /apps/gnome-terminal/profiles/Default/encoding en_US.UTF-
+    gconftool --set --type=string /apps/gnome-terminal/profiles/Default/encoding en_US.UTF-8
   SHELL
 end
